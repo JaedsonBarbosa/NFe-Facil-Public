@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+    <link rel="icon" type="image/png" href="/image/96x96_2.png" />
+
+    <!-- Milligram CSS -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"
+    />
+
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <title>NF-e Fácil - Do passado ao presente</title>
+
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7829302571176255" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <nav class="navigation">
+      <section class="container">
+        <a
+          class="navigation-title"
+          href="/"
+          title="NF-e Fácil - Um emissor fiscal minimalista"
+        >
+          <img class="img" src="/image/96x96_2.png" />
+          <h1 class="title">NF-e Fácil</h1>
+        </a>
+        <ul class="navigation-list float-right">
+          <li class="navigation-item">
+            <a class="navigation-link" href="/pagamento">
+              Pagamento
+            </a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="/posts">Posts</a>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    
+<main class="container">
+  <h1>Do passado ao presente</h1>
+<blockquote>
+<p>Este é um texto destinado a todos aqueles que usaram a primeira versão do NF-e Fácil, que era desenvolvida em UWP e compatível apenas com o Windows 10.</p>
+</blockquote>
+<p>A primeira versão do NF-e Fácil teve seu desenvolvimento iniciado no final de 2016, durando até dezembro de 2019, quando a última atualização foi lançada e mandei uma mensagem a todos os usuários informando sobre o encerramento da manutenção no aplicativo, deletando em seguida o grupo por onde eu mantinha contato com todos.</p>
+<p>Os motivos para o encerramento da versão UWP do projeto foram muitos e eles serão detalhados adiante no texto, mas quando ele ocorreu eu não estava pensando em desistir completamente do projeto, apenas precisava de uma pausa para que uma nova versão fosse planejada e construída, dessa vez com as mudanças pedidas e necessárias para garantir que desta vez não passemos pelos mesmos problemas enfrentados na versão UWP.</p>
+<h2>Fim da versão UWP</h2>
+<p>O desenvolvimento de um sistema desse tipo para o UWP trouxe consigo muitos desafios, aqui detalharei alguns motivos que foram, no mínimo, motivo de aborrecimento, sem falar de alguns problemas no projeto, foram eles:</p>
+<ol>
+<li>Não havia biblioteca de assinatura XML disponível na época, sendo necessário que eu passasse meses fazendo essa função eu mesmo;</li>
+<li>A Microsoft não permitia que os certificados fossem diretamente acessados pelo aplicativo, sendo necessária uma aplicação à parte para que certificados A3 pudessem ser usados;</li>
+<li>Não havia nenhuma biblioteca para impressão térmica, fazendo com que a qualidade de impressão das NFC-es fosse inaceitável;</li>
+<li>O fim do Windows 10 Mobile acabou com os planos do aplicativo ser usados em celulares, o que era um dos grandes diferenciais na época;</li>
+<li>Metade das pessoas que entravam em contato pedindo informações queriam usar a aplicação em sistemas não suportados, especialmente o Windows 7 e o Android.</li>
+<li>Nenhuma solução de nuvem era adotada, o que fazia com que a sincronização de dispositivos fosse muito complexa, pois ela ocorria pela rede local e toda a sincronização de dados era implementada manualmente por mim mesmo, sendo então uma origem potencial de erros;</li>
+<li>O DANFE da NF-e foi totalmente implementado por mim e ele sozinho ocupava quase 20% das linhas de código da aplicação;</li>
+<li>Não haviam testes automáticos, ou seja, se eu fizesse alguma alteração no código que &quot;quebrasse&quot; outra parte, eu só descobriria ou testando manualmente ou quando algum usuário me relatava;</li>
+<li>O projeto estava muito atrasado, pois ele havia sido construído usando como base o Manual de Orientação do Contribuinte, versão 6.0, lançado em 2015, e até o dia final ainda não havia sido implementadas na aplicação nem 20% das notas técnicas lançadas desde o lançamento do MOC, seriam necessários meses até que o aplicativo estivesse em dia com as últimas mudanças.</li>
+</ol>
+<p>Isso tudo fez o aborrecimento ser acumulado até que numa semana de provas, em um período onde eu estava cursando 7 cadeiras em simultâneo, eu tinha que fazer 7 provas numa única semana e o aplicativo parara de funcionar para alguns, pois o prazo de implantação de algumas notas técnicas haviam acabado. Então, no calor do momento, encerrei a versão UWP do projeto, porém considerei que seria um desperdício de tempo e esforço se eu simplesmente deletasse todo o código, por isso o enviei para o GitHub e até hoje ele está disponível num <a href="https://github.com/JaedsonBarbosa/NFeFacilLegacy">repositório público</a> para que qualquer um possa estudar, alterar e até republicá-lo.</p>
+<h2>A grande pausa e a decisão de retorno</h2>
+<p>Após uma grande pausa, entrei para um projeto na universidade que me obrigou a aprender tudo dobre computação na nuvem, programação de aplicativos Web e publicação nas lojas de aplicativos do Windows 10 e Android.</p>
+<p>Mais alguns meses passam e uma nova versão do MOC é lançada pela SEFAZ, agora atualizada com todas as notas técnicas lançadas até o meio de 2020, ficando de fora apenas algumas poucas lançadas no final de 2020 e início de 2021.</p>
+<p>Tudo então estava alinhado, eu já sabia construir aplicações que funcionam em qualquer aparelho e o MOC agora está atualizado com tudo o que preciso para construir uma nova solução. Era hora de iniciar o planejamento de uma nova versão do NF-e Fácil.</p>
+<h2>O recomeço</h2>
+<p>Os erros do passado não podiam ser repetidos, por isso tudo que gerava problemas no passado foi corrido (ou está para ser). A palavra da vez é terceirização, pois não há porquê fazer algo se alguém já o fez.</p>
+<ol>
+<li>Assinatura XML feita usando uma biblioteca pronta;</li>
+<li>Abandonado certificado A3 de vez, apenas um certificado A1 guardado no servidor já garante comunicação e assinatura a todos os dispositivos;</li>
+<li>Codificação e comunicação com impressoras térmicas feitas a partir de bibliotecas customizadas, ainda sem suporte no Android, mas há planos para que o Google resolva isso até a segunda metade de 2022;</li>
+<li>Compatibilidade com qualquer dispositivo móvel;</li>
+<li>Compatibilidade com qualquer sistema operacional;</li>
+<li>Adotado o Google Cloud, responsável por toda a segurança, armazenamento, processamento e comunicação;</li>
+<li>DANFE NF-e gerado usando a biblioteca <a href="https://github.com/nfephp-org/sped-da">sped-da</a>, mantida por mais de 70 desenvolvedores, garantindo que o DANFE sempre corresponda com todas as normas;</li>
+<li>Testes automáticos já estão no planejamento de 2022, eles garantirão que o aplicativo não apresente erros incômodos;</li>
+<li>Usado MOC atualizado para criar a aplicação, que está em dia com todas as notas técnicas emitidas pela SEFAZ.</li>
+</ol>
+<h2>Situação atual</h2>
+<p>A aplicação já faz o básico, ou seja, gerenciamento e emissão já está praticamente pronto. Já é possível importar suas notas emitidas em outros emissores e testar a emissão de algumas notas (recomendo que os testes sejam feitos em homologação), além de ver como estão as telas e como os dados são organizados.</p>
+<p>Como explicado antes, os testes automatizados ainda não foram feitos, logo até agora todos os feitos foram manuais, não cobrindo então toda a extensão do aplicativo, porém a construção da aplicação agora está mais organizada, de forma que não há risco de que mudanças em alguma função possam &quot;quebrar&quot; outros pontos do aplicativo, o que era um problema comum na antiga solução.</p>
+<p>Caso você teste a emissão e tudo funcione perfeitamente, então podes começar a usar desde já, pois não há risco de que um erro apareça em alguma atualização. Caso ocorra algum problema, ficarei agradecido se você puder me reportar os detalhes do erro usando qualquer um dos canais de comunicação que disponibilizo no rodapé da página.</p>
+
+</main>
+
+    <footer>
+      Entre em contato via:
+      <br />
+      <a href="https://wa.me/5583988856440" title="WhatsApp" target="_blank">
+        <img
+          src="/image/iconmonstr-whatsapp-4.svg"
+          alt="Símbolo do WhatsApp"
+        />
+      </a>
+      <a href="https://t.me/Jaedson33" title="Telegram" target="_blank">
+        <img
+          src="/image/iconmonstr-telegram-4.svg"
+          alt="Símbolo do Telegram"
+        />
+      </a>
+      <a
+        href="https://twitter.com/messages/compose?recipient_id=1262825502198452225"
+        title="Twitter"
+        target="_blank"
+      >
+        <img
+          src="/image/iconmonstr-twitter-4.svg"
+          alt="Símbolo do Twitter"
+        />
+      </a>
+      <a href="mailto:jaedson33@gmail.com" title="E-mail">
+        <img
+          src="/image/iconmonstr-email-10.svg"
+          alt="Símbolo de email"
+        />
+      </a>
+    </footer>
+  </body>
+</html>

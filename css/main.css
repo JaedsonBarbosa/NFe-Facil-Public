@@ -1,0 +1,106 @@
+.header {
+  background-color: #f4f5f6;
+  padding-top: 5rem;
+  margin-bottom: -5rem;
+}
+.header + section {
+  border-top: 0;
+}
+.header .container {
+  border-top: 0;
+  padding-bottom: 7.5rem;
+  padding-top: 7.5rem;
+  position: relative;
+  text-align: center;
+}
+.header .img {
+  height: 15rem;
+  margin-bottom: 2rem;
+}
+.header .button {
+  margin-bottom: 4rem;
+  margin-top: 2rem;
+}
+@media (min-width: 40rem) {
+  .header .button {
+    margin-bottom: 4rem;
+    margin-top: 2rem;
+  }
+}
+
+.navigation {
+  background: #f4f5f6;
+  border-bottom: 0.1rem solid #d1d1d1;
+  display: block;
+  height: 5rem;
+  left: 0;
+  max-width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+}
+.navigation .container {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+.navigation .navigation-list {
+  list-style: none;
+  margin-bottom: 0;
+}
+.navigation .navigation-item {
+  float: left;
+  margin-bottom: 0;
+  margin-left: 2.5rem;
+  position: relative;
+}
+.navigation .img {
+  height: 3rem;
+  position: relative;
+  top: 1rem;
+}
+.navigation .title,
+.navigation .navigation-title {
+  display: inline;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+}
+.navigation .navigation-link {
+  display: inline;
+  font-size: 1.6rem;
+  line-height: 5rem;
+  padding: 0;
+  text-decoration: none;
+}
+.navigation .navigation-link.active {
+  color: #606c76;
+}
+
+.container {
+  max-width: 80rem;
+}
+
+main.container {
+  margin-top: 12.5rem;
+  margin-bottom: 7.5rem;
+  text-align: justify;
+}
+main.container section:not(:last-child) {
+  padding-bottom: 7.5rem;
+}
+
+footer {
+  background-color: #f4f5f6;
+  text-align: center;
+  padding: 5rem;
+}
+footer img {
+  display: inline-block;
+  height: 2em;
+}
+
+/*# sourceMappingURL=main.css.map */
