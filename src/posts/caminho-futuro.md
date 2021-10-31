@@ -1,5 +1,5 @@
 ---
-title: Próximos passos
+title: Caminho futuro
 ---
 
 # {{ title }}

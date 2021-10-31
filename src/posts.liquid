@@ -5,7 +5,7 @@ layout: default
 
 <main class="container">
   <dl>
-    {%- for post in collections.post -%}
+    {%- for post in collections.post reversed -%}
     <dt>
       <a href="{{ post.url }}">{{ post.data.title }}</a>
     </dt>
