@@ -15,8 +15,6 @@ Sem dúvidas este é dos pontos mais complexos de serem definidos, por isso deci
 
 O motivo da adoção deste modelo é que ele gera menos custos, pois não existem análises de pagamento e limitação de funcionalidades em tempo real. Mesmo que algumas empresas não paguem e algumas paguem um valor baixo, os menores custos acabam por compensar a menor entrada de capital, ou seja, todos ganham.
 
-Se sua empresa é pequena e não pode pagar muito, tudo bem pagar valores menores, só não deixe de usar a plataforma por causa disso.
-
 ## Futuro
 
 Com base no comportamento das empresas, existem duas possibilidades para o futuro:
