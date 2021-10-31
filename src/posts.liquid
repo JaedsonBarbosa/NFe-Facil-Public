@@ -1,0 +1,16 @@
+---
+title: Posts
+layout: default
+---
+
+<main class="container">
+  <dl>
+    {%- for post in collections.post -%}
+    <dt>
+      <a href="{{ post.url }}">{{ post.data.title }}</a>
+    </dt>
+    <dd>Escrito em: {{ post.date | onlyDate }}</dd>
+    <dd>Tempo de leitura: {{ post | readingTime }}</dd>
+    {%- endfor -%}
+  </dl>
+</main>

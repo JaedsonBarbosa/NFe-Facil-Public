@@ -1,0 +1,24 @@
+{
+  "name": "nfe-facil-public",
+  "version": "1.0.0",
+  "description": "Site público do projeto NFe Fácil",
+  "scripts": {
+    "watch:sass": "sass --watch src/sass/main.scss dist/css/main.css",
+    "build:sass": "sass src/sass/main.scss:dist/css/main.css",
+    "watch:eleventy": "eleventy --serve",
+    "build:eleventy": "eleventy",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:*"
+  },
+  "author": "Jaedson Barbosa Serafim",
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "eleventy-plugin-reading-time": "^0.0.1",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-footnote": "^3.0.3"
+  }
+}
