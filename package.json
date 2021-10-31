@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Site público do projeto NFe Fácil",
   "scripts": {
-    "watch:sass": "sass --watch src/sass/main.scss dist/css/main.css",
-    "build:sass": "sass src/sass/main.scss:dist/css/main.css",
+    "watch:sass": "sass --watch src/sass/main.scss public/css/main.css",
+    "build:sass": "sass src/sass/main.scss:public/css/main.css",
     "watch:eleventy": "eleventy --serve",
     "build:eleventy": "eleventy",
     "start": "npm-run-all build:sass --parallel watch:*",
