@@ -1,5 +1,6 @@
 ---
 title: Do passado ao presente
+date: 2021-10-31
 ---
 
 # {{ title }}
@@ -24,7 +25,7 @@ O desenvolvimento de um sistema desse tipo para o UWP trouxe consigo muitos desa
 8. Não haviam testes automáticos, ou seja, se eu fizesse alguma alteração no código que "quebrasse" outra parte, eu só descobriria ou testando manualmente ou quando algum usuário me relatava;
 9. O projeto estava muito atrasado, pois ele havia sido construído usando como base o Manual de Orientação do Contribuinte, versão 6.0, lançado em 2015, e até o dia final ainda não havia sido implementadas na aplicação nem 20% das notas técnicas lançadas desde o lançamento do MOC, seriam necessários meses até que o aplicativo estivesse em dia com as últimas mudanças.
 
-Isso tudo fez o aborrecimento ser acumulado até que numa semana de provas, em um período onde eu estava cursando 7 cadeiras em simultâneo, eu tinha que fazer 7 provas numa única semana e o aplicativo parara de funcionar para alguns, pois o prazo de implantação de algumas notas técnicas haviam acabado. Então, no calor do momento, encerrei a versão UWP do projeto, porém considerei que seria um desperdício de tempo e esforço se eu simplesmente deletasse todo o código, por isso o enviei para o GitHub e até hoje ele está disponível num [repositório público](https://github.com/JaedsonBarbosa/NFeFacilLegacy) para que qualquer um possa estudar, alterar e até republicá-lo.
+Isso tudo fez o aborrecimento ser acumulado até que encerrei a versão UWP do projeto, porém considerei que seria um desperdício de tempo e esforço simplesmente deletar todo o código, por isso o enviei para o GitHub e até hoje ele está disponível num [repositório público](https://github.com/JaedsonBarbosa/NFeFacilLegacy) para que qualquer um possa estudar, alterar e até republicá-lo.
 
 ## A grande pausa e a decisão de retorno
 
@@ -55,4 +56,3 @@ A aplicação já faz o básico, ou seja, gerenciamento e emissão já está pra
 Como explicado antes, os testes automatizados ainda não foram feitos, logo até agora todos os feitos foram manuais, não cobrindo então toda a extensão do aplicativo, porém a construção da aplicação agora está mais organizada, de forma que não há risco de que mudanças em alguma função possam "quebrar" outros pontos do aplicativo, o que era um problema comum na antiga solução.
 
 Caso você teste a emissão e tudo funcione perfeitamente, então podes começar a usar desde já, pois não há risco de que um erro apareça em alguma atualização. Caso ocorra algum problema, ficarei agradecido se você puder me reportar os detalhes do erro usando qualquer um dos canais de comunicação que disponibilizo no rodapé da página.
-
